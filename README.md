@@ -8,7 +8,7 @@ It uses SASS (https://sass-lang.com/) as the CSS extension language.
 
 NodeJS and the Node Package Manager are required to install this project locally.
 
-In an Ubuntu based system, install them but with:
+In an Ubuntu based system, install them with:
 
 ```sudo apt install nodejs npm```
 
