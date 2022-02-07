@@ -2,6 +2,8 @@
 
 This website is based on Eleventy (https://www.11ty.dev/).
 
+It uses Nunjucks (https://mozilla.github.io/nunjucks/) as the templating engine.
+
 It uses SASS (https://sass-lang.com/) as the CSS extension language.
 
 ## Installation
