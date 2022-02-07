@@ -4,7 +4,6 @@ module.exports = (config) => {
 	const { minify } = require("terser");
 	const dirToClean = "build/*";
 	del(dirToClean);
-	config.addPlugin(require("@11ty/eleventy-navigation"));
 	config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
 		try {
 			const minified = await minify(code);
