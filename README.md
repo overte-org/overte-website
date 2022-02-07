@@ -10,7 +10,7 @@ It uses SASS (https://sass-lang.com/) as the CSS extension language.
 
 NodeJS and the Node Package Manager are required to install this project locally.
 
-In an Ubuntu based system, install them with:
+On an Ubuntu based system, install them with:
 
 ```sudo apt install nodejs npm```
 
@@ -22,9 +22,11 @@ and
 
 ```npm start```
 
+For other operating systems and general installation instructions for NodeJs, please consult their website https://nodejs.org/en/download/ 
+
 This will run file watchers and Eleventy itself.
 
-All relevant stylesheets and javascript are found in the src folder and will automatically compiled from there.
+All relevant stylesheets and javascript are found in the src folder and will automatically compiled be from there.
 
 ## Main branches
 
