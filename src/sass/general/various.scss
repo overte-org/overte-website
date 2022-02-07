@@ -1,0 +1,18 @@
+body {
+    font-family: $truUltra;
+    background: $backgroundColor;
+}
+.light {
+    display: initial;
+}
+.dark {
+    display: none;
+}
+@media (prefers-color-scheme: dark) {
+    .light {
+        display: none;
+    }
+    .dark {
+        display: initial;
+    }
+ }

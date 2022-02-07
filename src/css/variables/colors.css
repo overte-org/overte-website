@@ -1,0 +1,17 @@
+:root {
+  --background: #dfdfdf;
+  --secondaryBackground: #cacaca;
+  --text: #292929;
+  --navText: #292929;
+  --hover: #7f7e7e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #292929;
+    --secondaryBackground: #aaaaaa;
+    --text: #dfdfdf;
+    --navText: #2b2b2b;
+    --hover: #7f7e7e;
+  }
+}

@@ -1,0 +1,9 @@
+---
+permalink: /js/main.min.js
+eleventyExcludeFromCollections: true
+---
+{% set js %}
+ {% include "src/js/logoAnimation.js" %}
+{% endset %}
+
+{{ js | jsmin | safe }}

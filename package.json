@@ -1,0 +1,27 @@
+{
+    "main": "index.html",
+    "scripts": {
+        "watch:sass": "sass  --no-source-map --watch src/sass:src/css",
+        "watch:nano": "postcss src/css/all.css -o build/css/all.min.css -u autoprefixer cssnano --no-map --watch src/css/all.css",
+        "watch:eleventy": "eleventy --serve",
+        "build:sass": "sass  --no-source-map src/sass/all.scss:src/css/all.css",
+        "build:eleventy": "eleventy",
+        "postbuild": "postcss src/css/all.css -o build/css/all.min.css -u autoprefixer cssnano --no-map",
+        "start": "npm-run-all build:sass postbuild --parallel watch:*",
+        "build": "npm-run-all build:sass build:eleventy postbuild"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^0.12.1",
+        "autoprefixer": "^9.8.6",
+        "cross-env": "^7.0.3",
+        "cssnano": "^5.0.6",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.2.6",
+        "postcss-cli": "^8.3.1",
+        "sass": "^1.35.2",
+        "del": "^6.0.0"
+    },
+    "browserslist": [
+        "last 2 versions"
+    ]
+}

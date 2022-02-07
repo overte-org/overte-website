@@ -1,0 +1,12 @@
+<nav>
+    <ul style="list-style: none;" class="nav">
+        <li id="logo-dot"></li>
+        {%- for contentBlock in collections.contentBlock | sortByOrder -%}
+        <li>
+            <a href="#{{ contentBlock.data.navUrl }}">
+                <div class="nav--text">{{ contentBlock.data.title }}</div>
+            </a>
+        </li>
+        {%- endfor -%}
+    </ul>
+</nav>
