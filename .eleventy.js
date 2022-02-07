@@ -21,7 +21,6 @@ module.exports = (config) => {
 	config.addFilter("cssmin", function (code) {
 		return new CleanCSS({}).minify(code).styles;
 	});
-	config.addShortcode("navlist", require("./lib/shortcodes/navlist.js"));
 	config.addPassthroughCopy("src/img");
 	config.addPassthroughCopy("src/fonts");
 	config.addPassthroughCopy("src/robots.txt");
