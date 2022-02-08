@@ -24,11 +24,10 @@ nav, .logo--sticky {
 }
 .nav {
     padding:  21px 0 0 0;
-    margin: 0 auto;
+    margin: 0 $element-spacing;
     max-width: $width-content;
     display: flex;
     position: relative;
-    background: $backgroundColor;
 
     @media screen and (max-width: $mobile-break) {
         display: none;
@@ -75,7 +74,7 @@ nav, .logo--sticky {
         z-index: 5;
         position: absolute;
         top: 7px;
-        left: -3px;
+        left: -6px;
         opacity: 0;
         transition: all 0.2s;
     }        
