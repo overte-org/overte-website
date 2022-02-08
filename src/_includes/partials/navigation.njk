@@ -16,11 +16,11 @@
         <div class="mobile-nav--body">
             <ul>
                 {%- for contentBlock in collections.contentBlock | sortByOrder -%}
-                <li class="mobile-nav--item">
-                    <a href="#{{ contentBlock.data.navUrl }}">
-                        <div class="nav--text">{{ contentBlock.data.title }}</div>
-                    </a>
-                </li>
+                <a href="#{{ contentBlock.data.navUrl }}" class="mobile-nav--text">
+                    <li class="mobile-nav--item">
+                        <div>{{ contentBlock.data.title }}</div>
+                    </li>
+                </a>
                 {%- endfor -%}
             </ul
         </div>
