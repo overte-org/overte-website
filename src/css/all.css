@@ -19,15 +19,21 @@
 :root {
   --width-content: 60vw;
   --element-spacing: 20vw;
-  --min-width: 100%;
-  --mobile-width: 100%;
-  --mobile-break: 900px;
+  --logo-spacing: 0px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   :root {
     --width-content: 90vw;
     --element-spacing: 5vw;
+    --min-width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    --width-content: 80vw;
+    --element-spacing: 10vw;
+    --logo-spacing: 4px;
     --min-width: 100%;
   }
 }
@@ -43,6 +49,53 @@
   font-weight: normal;
   font-style: normal;
 }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 body {
   font-family: "truenoultralight";
   background: var(--background);
@@ -85,7 +138,7 @@ main {
   position: relative;
   top: -150px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .section .nav--anchor {
     top: -50px;
   }
@@ -103,6 +156,7 @@ main {
   background: #000000;
   color: #ffffff;
   border-bottom-right-radius: 25px;
+  font-size: 150%;
 }
 
 .teaser {
@@ -137,7 +191,7 @@ nav, .logo--sticky {
   top: 0px;
   transition: all 0.3s;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   nav, .logo--sticky {
     position: initial;
   }
@@ -145,11 +199,11 @@ nav, .logo--sticky {
 
 .logo--sticky {
   z-index: 10;
-  padding-left: calc(var(--element-spacing) - 8px);
+  padding-left: calc(var(--element-spacing) - var(--logo-spacing));
 }
 
 .logo, .logo--sticky {
-  height: 50px;
+  height: 60px;
   padding-top: 13px;
 }
 
@@ -158,14 +212,14 @@ nav, .logo--sticky {
 }
 
 .nav {
-  padding: 19px 0 0 0;
+  padding: 21px 0 0 0;
   margin: 0 auto;
   max-width: var(--width-content);
   display: flex;
   position: relative;
   background: var(--background);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .nav {
     display: none;
   }
@@ -204,11 +258,11 @@ nav, .logo--sticky {
   margin-left: 0;
   padding-right: 5px;
   border-radius: 50px;
-  height: 50px;
-  width: 24px;
+  height: 59px;
+  width: 60px;
   z-index: 5;
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: -3px;
   opacity: 0;
   transition: all 0.2s;
@@ -216,7 +270,7 @@ nav, .logo--sticky {
 .nav li:nth-child(2) {
   background: #cfff99;
   z-index: 4;
-  margin-left: 35px;
+  margin-left: 25px;
   border-radius: 25px;
 }
 .nav li:nth-child(3) {
@@ -252,7 +306,7 @@ nav, .logo--sticky {
   z-index: 1;
   display: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .mobile-nav--menu {
     display: block;
   }

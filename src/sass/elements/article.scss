@@ -16,7 +16,7 @@ main {
         position: relative;
         top: -150px;
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $mobile-break) {
             top: -50px;
         }
     }
@@ -33,6 +33,7 @@ main {
         background: #000000;
         color: #ffffff;
         border-bottom-right-radius: 25px;
+        font-size: 150%;
     }
 }
 
