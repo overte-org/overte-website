@@ -12,7 +12,7 @@ nav, .logo--sticky {
 }
 .logo--sticky {
     z-index: 10;
-    padding-left: calc(#{$element-spacing} - 4px);
+    padding-left: calc(#{$element-spacing} - 8px);
 }
 .logo, .logo--sticky {
     height: 50px;
