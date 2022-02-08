@@ -1,0 +1,10 @@
+.gallery-top {
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  max-height: 500px;
+}
+.gallery-top img {
+  width: 100%;
+  object-fit: cover;
+}
