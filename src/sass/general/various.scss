@@ -2,6 +2,9 @@ body {
     font-family: $truUltra;
     background: $backgroundColor;
     margin-bottom: 0;
+    background: url("/img/blur_light.jpg") $backgroundColor;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .light {
     display: initial;
@@ -10,6 +13,11 @@ body {
     display: none;
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        background: url("/img/blur_dark.jpg") $backgroundColor;
+        background-attachment: fixed;
+        background-size: cover;
+    }
     .light {
         display: none;
     }
