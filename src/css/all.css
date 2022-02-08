@@ -182,6 +182,17 @@ main {
   width: 200px;
 }
 
+.gallery-top {
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  max-height: 500px;
+}
+.gallery-top img {
+  width: 100%;
+  object-fit: cover;
+}
+
 #logo-dot.is--visible {
   opacity: 1;
 }
@@ -293,8 +304,8 @@ nav, .logo--sticky {
   z-index: 99999;
 }
 .mobile-nav--menu {
-  width: 31px;
-  height: 25px;
+  width: 50px;
+  height: 48px;
   background: black;
   padding: 13px 10px;
   margin-right: 10px;
