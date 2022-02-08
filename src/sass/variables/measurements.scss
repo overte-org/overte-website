@@ -1,18 +1,25 @@
 :root {
     --width-content: 60vw;
     --element-spacing: 20vw;
-    --min-width: 100%;
-    --mobile-width: 100%;
-    --mobile-break: 900px;
+    --logo-spacing: 0px;
 }
 $width-content: var(--width-content);
 $element-spacing: var(--element-spacing);
-$min-width: var(--min-width);
-$mobile-break: var(--mobile-break);
-@media screen and (max-width: 900px) {
+$logo-spacing: var(--logo-spacing);
+$mobile-break: 800px;
+$tablet-break: 1200px;
+@media screen and (max-width: $mobile-break) {
     :root {
         --width-content: 90vw;
         --element-spacing: 5vw;
+        --min-width: 100%;
+    }
+}
+@media screen and (max-width: $tablet-break) {
+    :root {
+        --width-content: 80vw;
+        --element-spacing: 10vw;
+        --logo-spacing: 0px;
         --min-width: 100%;
     }
 }
