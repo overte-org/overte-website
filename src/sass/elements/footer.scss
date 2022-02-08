@@ -1,0 +1,16 @@
+footer {
+    width: $width-content;
+    margin: 0 auto;
+    background: $secondaryBackgroundColor;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    min-height: 50px;
+
+    .footer {
+        &--wrap {
+            width: 100%;
+            padding: 20px;
+            text-align: left;
+        }
+    }
+}
