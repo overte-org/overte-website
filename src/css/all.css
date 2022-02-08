@@ -304,8 +304,8 @@ nav, .logo--sticky {
   z-index: 99999;
 }
 .mobile-nav--menu {
-  width: 31px;
-  height: 25px;
+  width: 50px;
+  height: 48px;
   background: black;
   padding: 13px 10px;
   margin-right: 10px;
