@@ -1,5 +1,5 @@
 main {
-    max-width: 60vw;
+    max-width: $width-content;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -15,6 +15,10 @@ main {
     & .nav--anchor {
         position: relative;
         top: -150px;
+
+        @media screen and (max-width: 900px) {
+            top: -50px;
+        }
     }
     & p {
         margin-bottom: 30px;

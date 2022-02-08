@@ -5,10 +5,14 @@ nav, .logo--sticky {
     position: sticky;
     top: 0px;
     transition: all 0.3s;
+
+    @media screen and (max-width: 900px) {
+        position: initial;
+    }
 }
 .logo--sticky {
     z-index: 10;
-    padding-left: calc(20vw - 8px);;
+    padding-left: calc(#{$element-spacing} - 4px);
 }
 .logo, .logo--sticky {
     height: 50px;
@@ -21,10 +25,14 @@ nav, .logo--sticky {
 .nav {
     padding:  19px 0 0 0;
     margin: 0 auto;
-    max-width: 60vw;
+    max-width: $width-content;
     display: flex;
     position: relative;
     background: $backgroundColor;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
 
     & a {
         text-decoration: none;
@@ -34,9 +42,7 @@ nav, .logo--sticky {
             color: $navigationTextColor;
         }
     }
-    &--anchor {
-        margin-top: -100px;
-    }
+
     & li {
         padding: 8px;
         padding-left: 35px;
@@ -95,4 +101,85 @@ nav, .logo--sticky {
         background: #ff99c4;
         z-index: 0;
     }
+}
+.mobile-nav {
+    z-index: 99999;
+
+    &--menu {
+        width: 31px;
+        height: 25px;
+        background: black;
+        padding: 13px 10px;
+        margin-right: 10px;
+        position: fixed;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+
+        @media screen and (max-width: 900px) {
+            display: block;
+        }
+    }
+    &--menu-line1, &--menu-line2, &--menu-line3 {
+        background: white;
+        height: 3px;
+        width: 30px;
+        transition: all 0.3s;
+        position: absolute;
+    }
+    &--menu-line1 {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    &--menu-line2 {
+        transform: translate3d(0px, 10px, 0px);
+        opacity: 1;
+    }
+    &--menu-line3 {
+        transform: translate3d(0px, 20px, 0px);
+    }
+    &--menu.is--open &--menu-line1 {
+        transform: translate3d(0px, 10px, 0px) rotate(45deg);
+    }
+    &--menu.is--open &--menu-line2 {
+        opacity: 0;
+    }
+    &--menu.is--open &--menu-line3 {
+        transform: translate3d(0px, 10px, 0px) rotate(-45deg);
+    }
+    &--body {
+        background: black;
+        width: 350px;
+        position: absolute;
+        top: 50px;
+        right: -360px;
+        transition: all 0.3s;
+    }
+    &--menu.is--open &--body {
+        right: 0;
+    }
+    &--items {
+        margin: 0;
+        padding: 0;
+    }
+    &--item {
+        color: $mobileNavColor;
+        font-size: 20px;
+        list-style: none;
+        text-transform: uppercase;
+        width: calc(100% - 10px);
+        padding: 10px;
+        margin: 10px 0;
+        font-family: $truLight;
+
+        a {
+            color: $mobileNavColor;
+            text-decoration: none;
+        }
+    }
+    &--item:hover {
+        background: darkgray;
+    }
+
 }

@@ -1,6 +1,18 @@
-$width-content: 60%;
-$element-spacing: 20px;
-$min-width: 100%;
-$mobile-width: 100%;
-$desktop-width: 800px;
-$mobile-break: 900px;
+:root {
+    --width-content: 60vw;
+    --element-spacing: 20vw;
+    --min-width: 100%;
+    --mobile-width: 100%;
+    --mobile-break: 900px;
+}
+$width-content: var(--width-content);
+$element-spacing: var(--element-spacing);
+$min-width: var(--min-width);
+$mobile-break: var(--mobile-break);
+@media screen and (max-width: 900px) {
+    :root {
+        --width-content: 90vw;
+        --element-spacing: 5vw;
+        --min-width: 100%;
+    }
+}

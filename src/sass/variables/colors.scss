@@ -3,6 +3,7 @@
     --secondaryBackground: #cacaca;
     --text: #292929;
     --navText: #292929;
+    --mobileNavText: #dfdfdf;
     --hover: #7f7e7e;
 }
 $backgroundColor: var(--background);
@@ -10,6 +11,7 @@ $secondaryBackgroundColor: var(--secondaryBackground);
 $textColor: var(--text);
 $navigationTextColor: var(--navText);
 $hover: var(--hover);
+$mobileNavColor: var(--mobileNavText);
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #292929;

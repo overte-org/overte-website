@@ -9,4 +9,20 @@
         </li>
         {%- endfor -%}
     </ul>
+    <div class="mobile-nav--menu" onclick="document.getElementsByClassName('mobile-nav--menu')[0].classList.toggle('is--open');">
+        <div class="mobile-nav--menu-line1"></div>
+        <div class="mobile-nav--menu-line2"></div>
+        <div class="mobile-nav--menu-line3"></div>
+        <div class="mobile-nav--body">
+            <ul>
+                {%- for contentBlock in collections.contentBlock | sortByOrder -%}
+                <li class="mobile-nav--item">
+                    <a href="#{{ contentBlock.data.navUrl }}">
+                        <div class="nav--text">{{ contentBlock.data.title }}</div>
+                    </a>
+                </li>
+                {%- endfor -%}
+            </ul
+        </div>
+    </div>
 </nav>
