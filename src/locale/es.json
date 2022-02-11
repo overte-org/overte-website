@@ -1,7 +1,10 @@
 {
     "lang": [
         {
-            "titleIntroduction": "Test"
+            "titleIntroduction": "Test",
+            "contentIntroduction": "<p>This is an example text for the introduction. Writing about things and so on.</p>\n",
+            "titleDownloads": "Downloads",
+            "contentDownloads": "<p>This is an example text for the downloads. Writing about things and so on.</p>\n<p>More stuff writtin here.</p>\n"
         }
     ]
 }
