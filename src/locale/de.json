@@ -2,7 +2,9 @@
     "lang": [
         {
             "contentDownloads": "<p>Dies ist ein Beispieltext für die Downloads. Geschrieben über Dinge und so weiter.</p>\n<p>Hier ist noch mehr geschrieben.</p>\n",
-            "titleIntroduction": "Einführung"
+            "titleIntroduction": "Einführung",
+            "titleDownloads": "Downloads",
+            "contentIntroduction": "<p>This is an example text for the introduction. Writing about things and so on.</p>\n"
         }
     ]
 }
