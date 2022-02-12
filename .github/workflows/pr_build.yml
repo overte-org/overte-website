@@ -1,0 +1,22 @@
+name: Pull Request CI Build
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build_site:
+    runs-on: ubuntu-20.04
+
+    name: Build website
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Build website
+      shell: bash
+      run: |
+        npm run build
