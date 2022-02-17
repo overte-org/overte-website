@@ -100,6 +100,9 @@ body {
   font-family: "truenoultralight";
   background: var(--background);
   margin-bottom: 0;
+  background: url("/img/blur_light.jpg") var(--background);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .light {
@@ -111,6 +114,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background: url("/img/blur_dark.jpg") var(--background);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   .light {
     display: none;
   }
@@ -133,10 +142,11 @@ main {
   z-index: -1;
   border-radius: 25px;
   overflow: hidden;
+  box-shadow: 5px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
 .section .nav--anchor {
   position: relative;
-  top: -150px;
+  top: -120px;
 }
 @media screen and (max-width: 800px) {
   .section .nav--anchor {
@@ -156,7 +166,7 @@ main {
   background: #000000;
   color: #ffffff;
   border-bottom-right-radius: 25px;
-  font-size: 150%;
+  font-size: 130%;
 }
 
 .teaser {
@@ -187,9 +197,11 @@ main {
   border-radius: 25px;
   overflow: hidden;
   max-height: 500px;
+  box-shadow: 5px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
 .gallery-top img {
   width: 100%;
+  min-height: 500px;
   object-fit: cover;
 }
 
@@ -248,16 +260,11 @@ nav, .logo--sticky {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   box-shadow: 3px -1px 6px -1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 3px -1px 6px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px -1px 6px -1px rgba(0, 0, 0, 0.75);
   transition: all 0.3s;
   font-family: "truenolight";
 }
 .nav li:hover {
   box-shadow: 5px -1px 6px -1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px -1px 6px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px -1px 6px -1px rgba(0, 0, 0, 0.75);
-  filter: brightness(150%);
   cursor: pointer;
 }
 .nav li {
@@ -283,9 +290,15 @@ nav, .logo--sticky {
   margin-left: 25px;
   border-radius: 25px;
 }
+.nav li:nth-child(2):hover {
+  background: #e1fcc2;
+}
 .nav li:nth-child(3) {
   background: #99fff6;
   z-index: 3;
+}
+.nav li:nth-child(3):hover {
+  background: #bcfcf6;
 }
 .nav li:nth-child(4) {
   background: #c099ff;
@@ -304,8 +317,8 @@ nav, .logo--sticky {
   z-index: 99999;
 }
 .mobile-nav--menu {
-  width: 31px;
-  height: 25px;
+  width: 50px;
+  height: 48px;
   background: black;
   padding: 13px 10px;
   margin-right: 10px;
@@ -372,7 +385,7 @@ nav, .logo--sticky {
   margin: 10px 0;
   font-family: "truenolight";
 }
-.mobile-nav--item a {
+.mobile-nav--text {
   color: var(--mobileNavText);
   text-decoration: none;
 }
@@ -387,6 +400,7 @@ footer {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   min-height: 50px;
+  box-shadow: 5px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
 footer .footer--wrap {
   width: 100%;
