@@ -1,0 +1,11 @@
+---
+permalink: '/lang.json'
+---
+{
+"lang": [
+    { {% for item in collections.contentBlock | sortByOrder %}
+        "title{{ item.data.title }}": "{{ item.data.title }}",
+        "content{{ item.data.title }}": {{ item.templateContent | dump | safe }}{% if not loop.last %},{% endif %}{% endfor %}
+    }
+]
+}
