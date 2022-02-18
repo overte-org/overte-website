@@ -22,6 +22,9 @@ nav, .logo--sticky {
 .logo {
     margin-left: -5px
 }
+nav {
+    z-index: 2;
+}
 .nav {
     padding:  21px 0 0 0;
     margin: 0 $element-spacing;

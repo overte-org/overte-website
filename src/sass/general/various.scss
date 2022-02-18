@@ -1,3 +1,8 @@
+html {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 70px;
+}
 body {
     font-family: $truUltra;
     background: $backgroundColor;
@@ -24,4 +29,4 @@ body {
     .dark {
         display: initial;
     }
- }
+}
