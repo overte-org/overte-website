@@ -1,7 +1,39 @@
 .news {
+    p {
+        margin-bottom: 10px;
+    }
     &--post {
+        margin-bottom: 20px;
+
         h2 {
+            font-size: 100%;
             position:initial;
+            border-radius: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
+        a {
+            text-decoration: none;
+            color: $textColor;
+        }
+    }
+    &--content {
+        display: flex;
+
+        &-image {
+            max-width: 15%;
+            min-width: 90px;
+
+            img {
+                width: 100%;
+            }
+        }
+        &-summary {
+            padding: 20px;
+        }
+    }
+    &--read-more {
+        color: $link;
+        text-decoration: underline;
     }
 }

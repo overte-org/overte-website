@@ -1,8 +1,8 @@
 ---
-title: Testnews 1
+title: Testnews2
 subtitle: 
 layout: news-post.njk
-summary: This is the summary for the testnews1
+summary: This is the summary for the testnews2
 teaserImage: teaser1.png
 
 author:
