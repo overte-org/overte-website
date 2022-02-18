@@ -16,5 +16,15 @@ articleTopLinks: {
 }
 ---
 
-This is an example text for the downloads. Writing about things and so on.
+[Linux AppImage](http://oaktown.pl/tmp/Overte-x86_64.AppImage)
+
+[Windows installer](http://oaktown.pl/tmp/Overte-20220212--.exe)
+
+Windows installer is not signed yet, so Windows Defender might display a warning about this.
+
+Mac OS build coming soon.
+
+[Source code repository](https://github.com/overte-org)
+
+Building from source
 
