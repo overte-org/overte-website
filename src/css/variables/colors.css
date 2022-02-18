@@ -1,5 +1,6 @@
 :root {
   --background: #dfdfdf;
+  --backgroundLight: #c7c7c7;
   --secondaryBackground: #cacaca;
   --text: #292929;
   --link: #b60202;
@@ -11,6 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #292929;
+    --backgroundLight: #949494;
     --secondaryBackground: #aaaaaa;
     --text: #292929;
     --link: #b60202;
