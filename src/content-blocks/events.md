@@ -1,10 +1,10 @@
 ---
-title: News
+title: Events
 permalink: false
-navUrl: news
+navUrl: events
 subtitle: 
 layout: page.njk
-order: 4
+order: 5
 
 author:
   image: 
@@ -16,4 +16,4 @@ articleTopLinks: {
 }
 ---
 
-
+Events calendar should be here
