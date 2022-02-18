@@ -11,12 +11,13 @@ main {
     z-index: -1;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 5px 0px 6px 0px rgba(0,0,0,.75);
 
     & .nav--anchor {
         position: relative;
-        top: -150px;
+        top: -120px;
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $mobile-break) {
             top: -50px;
         }
     }
@@ -33,6 +34,7 @@ main {
         background: #000000;
         color: #ffffff;
         border-bottom-right-radius: 25px;
+        font-size: 130%;
     }
 }
 
