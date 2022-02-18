@@ -35,6 +35,13 @@ main {
         border-bottom-right-radius: 25px;
         font-size: 130%;
     }
+    ul {
+        list-style: disc;
+        li {
+            margin-left: 18px;
+            padding-bottom: 20px;
+        }
+    }
 }
 
 .teaser {
