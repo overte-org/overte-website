@@ -3,7 +3,7 @@
         <li id="logo-dot"></li>
         {%- for contentBlock in collections.contentBlock | sortByOrder -%}
         <li>
-            <a href="#{{ contentBlock.data.navUrl }}">
+            <a href="/#{{ contentBlock.data.navUrl }}">
                 <div class="nav--text">{{ contentBlock.data.title }}</div>
             </a>
         </li>
@@ -16,7 +16,7 @@
         <div class="mobile-nav--body">
             <ul>
                 {%- for contentBlock in collections.contentBlock | sortByOrder -%}
-                <a href="#{{ contentBlock.data.navUrl }}" class="mobile-nav--text">
+                <a href="/#{{ contentBlock.data.navUrl }}" class="mobile-nav--text">
                     <li class="mobile-nav--item">
                         <div>{{ contentBlock.data.title }}</div>
                     </li>

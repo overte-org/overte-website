@@ -5,7 +5,6 @@
 {% include "partials/navigation.njk" %}
 <main>
     {% include "partials/gallery-top.njk" %}
-    {% include "partials/news.njk" %}
     {%- for contentBlock in collections.contentBlock | sortByOrder -%}
     <article class="section">
         <a id="{{ contentBlock.data.navUrl }}" class="nav--anchor"></a>

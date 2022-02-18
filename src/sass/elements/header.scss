@@ -69,24 +69,32 @@ nav {
         border-radius: 50px;
         height:59px;
         width:60px;
-        z-index: 5;
+        z-index: 6;
         position: absolute;
         top: 7px;
         left: -6px;
         opacity: 0;
         transition: all 0.2s;
-    }        
+    }
     & li:nth-child(2) {
-        background: #cfff99;
-        z-index: 4;
+        background: #ffc799;
+        z-index: 5;
         margin-left: 25px;
         border-radius: 25px;
+
+        &:hover {
+            background: #fcddc3;
+        }
+    }        
+    & li:nth-child(3) {
+        background: #cfff99;
+        z-index: 4;
 
         &:hover {
             background: #e1fcc2;
         }
     }        
-    & li:nth-child(3) {
+    & li:nth-child(4) {
         background: #99fff6;
         z-index: 3;
 
@@ -94,15 +102,15 @@ nav {
             background: #bcfcf6;
         }
     }        
-    & li:nth-child(4) {
+    & li:nth-child(5) {
         background: #c099ff;
         z-index: 2;
     }        
-    & li:nth-child(5) {
+    & li:nth-child(6) {
         background: #f399ff;
         z-index: 1;
     }        
-    & li:nth-child(6) {
+    & li:nth-child(7) {
         background: #ff99c4;
         z-index: 0;
     }

@@ -2,6 +2,7 @@
     --background: #dfdfdf;
     --secondaryBackground: #cacaca;
     --text: #292929;
+    --link: #b60202;
     --navText: #292929;
     --mobileNavText: #dfdfdf;
     --hover: #7f7e7e;
@@ -9,6 +10,7 @@
 $backgroundColor: var(--background);
 $secondaryBackgroundColor: var(--secondaryBackground);
 $textColor: var(--text);
+$link:  var(--link);
 $navigationTextColor: var(--navText);
 $hover: var(--hover);
 $mobileNavColor: var(--mobileNavText);
@@ -16,7 +18,8 @@ $mobileNavColor: var(--mobileNavText);
     :root {
         --background: #292929;
         --secondaryBackground: #aaaaaa;
-        --text: #dfdfdf;
+        --text: #292929;
+        --link: #b60202;
         --navText: #2b2b2b;
         --hover: #7f7e7e;
     }
