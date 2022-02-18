@@ -6,6 +6,9 @@ footer {
     border-top-right-radius: 25px;
     min-height: 50px;
     box-shadow: 5px 0px 6px 0px rgba(0,0,0,.75);
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - var(--width-content) / 2);
 
     .footer {
         &--wrap {
