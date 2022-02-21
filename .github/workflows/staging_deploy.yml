@@ -29,4 +29,4 @@ jobs:
         username: ${{ secrets.GHA_FTP_USER }}
         password: ${{ secrets.GHA_FTP_PASS }}
         local-dir: ./build/
-        server-dir: overte/overte.tuxfamily.org-web/htdocs/staging/
+        server-dir: overte/overte.org-web/htdocs/staging/
