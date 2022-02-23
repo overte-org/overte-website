@@ -16,7 +16,7 @@ articleTopLinks: {
 }
 ---
 
-Overte is an open source virtual worlds software for both VR and non-VR users.
+Overte is an open source virtual worlds and social VR software for both VR and non-VR users.
 
 Key features:
 
