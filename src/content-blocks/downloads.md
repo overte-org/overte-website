@@ -16,15 +16,13 @@ articleTopLinks: {
 }
 ---
 
-[Linux AppImage](http://oaktown.pl/tmp/Overte-x86_64.AppImage)
+[Linux AppImage](https://github.com/overte-org/overte/releases/download/20220222/Overte-x86_64-20220222.AppImage)
 
-[Windows installer](http://oaktown.pl/tmp/Overte-20220212--.exe)
+[Windows installer](https://github.com/overte-org/overte/releases/download/20220222/Overte-20220222.exe)
 
 Windows installer is not signed yet, so Windows Defender might display a warning about this.
 
 Mac OS build coming soon.
 
 [Source code repository](https://github.com/overte-org)
-
-Building from source
 

@@ -20,7 +20,6 @@ Overte is an open source virtual worlds and social VR software for both VR and n
 
 Key features:
 
-
 * Collaborative world creation and editing.
 * Steam VR support, including full-body tracking.
 * Excellent scalability, allowing events with as many as 500 users in a single virtual world.

@@ -16,11 +16,7 @@ articleTopLinks: {
 }
 ---
 
-User documentation
+[User documentation](https://docs.overte.org)
 
-Developer documentation
-
-Terms of Service
-
-Code of Conduct
+[API documentation](http://apidocs.overte.org)
 

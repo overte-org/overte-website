@@ -16,4 +16,5 @@ articleTopLinks: {
 }
 ---
 
-Events calendar should be here
+Events calendar coming soon.
+
