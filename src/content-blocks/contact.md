@@ -16,6 +16,11 @@ articleTopLinks: {
 }
 ---
 
+Overte is following the open source philisophy through and through. That's why we recommend Matrix. To join our Matrix space please use following link:
 
-Join us on our [Matrix](https://matrix.to/#/#overte:matrix.org) and [Discord](https://discord.gg/4YuQvc8K2f)
+[https://matrix.to/#/#overte:matrix.org](https://matrix.to/#/#overte:matrix.org).
+
+Matrix uses many client applications, with [Element](https://element.io/) being the most popular one.
+
+Our Matrix space is also bridged to [Discord](https://discord.gg/4YuQvc8K2f).
 
