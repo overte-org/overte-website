@@ -3,7 +3,7 @@ title: Overte initial release
 subtitle: 
 layout: news-post.njk
 summary: Builds are available for the initial release of Overte
-teaserImage: teaser1.png
+teaserImage: news1.jpg
 
 author:
   image: 
