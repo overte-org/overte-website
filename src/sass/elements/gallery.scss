@@ -1,0 +1,17 @@
+#gallery {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.cssbox-link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
+    .cssbox_thumb {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

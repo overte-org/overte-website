@@ -16,16 +16,16 @@ articleTopLinks: {
 }
 ---
 
-[Linux AppImage](https://github.com/overte-org/overte/releases/download/20220222/Overte-x86_64-20220222.AppImage)
+[![Appimage](/img/icons/app-x-iso9660-appimage-icon.png)Linux AppImage](https://github.com/overte-org/overte/releases/download/20220222/Overte-x86_64-20220222.AppImage){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
-[Windows installer](https://github.com/overte-org/overte/releases/download/20220222/Overte-20220222.exe)
+[![Windows Installer](/img/icons/app-x-msdos-program-icon.png)Windows installer](https://github.com/overte-org/overte/releases/download/20220222/Overte-20220222.exe){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
-Windows installer is not signed yet, so Windows Defender might display a warning about this.
+Windows installer is not signed yet, so Windows Defender might display a warning about this.{class="warning"}
 
 -   First click on *"More info"*
 -   Then click on *"Run anyway"* to continue
 
 Mac OS build coming soon.
 
-[Source code repository](https://github.com/overte-org)
+[![Windows Installer](/img/icons/git-icon.png)Source code repository](https://github.com/overte-org){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --background: #dfdfdf;
   --backgroundLight: #c7c7c7;
@@ -140,6 +141,58 @@ body {
     display: initial;
   }
 }
+.external-link {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 12px;
+  height: 12px;
+  box-shadow: -2px 2px 0 0, -4px -4px 0 -2px, 4px 4px 0 -2px;
+  margin-left: -2px;
+  margin-top: 1px;
+}
+
+.external-link::after,
+.external-link::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  right: -4px;
+}
+
+.external-link::after {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  top: -4px;
+}
+
+.warning {
+  position: relative;
+  background: var(--backgroundLight);
+  padding: 40px 20px 20px 20px;
+  border: 1px solid var(--text);
+  width: max-content;
+}
+.warning:before {
+  content: "!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--background);
+  color: var(--link);
+  width: 25px;
+  height: 30px;
+  font-family: "truenolight";
+  font-size: 140%;
+  padding-left: 9px;
+  padding-top: 2px;
+  font-weight: bold;
+}
+
 main {
   max-width: var(--width-content);
   margin: 0 auto;
@@ -210,6 +263,36 @@ main {
   width: 200px;
 }
 
+a.external-link {
+  background: var(--hover);
+  padding: 10px 20px 10px 15px;
+  color: var(--navText);
+  font-family: "truenolight";
+  text-decoration: none;
+  min-width: 300px;
+  width: max-content;
+  height: 64px;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+a.external-link:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  background: var(--background);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.external-link img {
+  height: 30px;
+  position: relative;
+  top: 8px;
+  margin-right: 30px;
+}
+
 .gallery-top {
   width: 100%;
   border-radius: 25px;
@@ -220,6 +303,24 @@ main {
 .gallery-top img {
   width: 100%;
   min-height: 500px;
+  object-fit: cover;
+}
+
+#gallery {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cssbox-link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.cssbox-link .cssbox_thumb {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -257,16 +358,12 @@ main {
   object-fit: cover;
 }
 .news--content-summary {
-  padding: 20px 20px 0 20px;
+  padding: 20px;
 }
 .news--content .news--read-more {
   color: var(--link);
   text-decoration: underline;
   margin-bottom: 0;
-}
-
-#logo-dot.is--visible {
-  opacity: 1;
 }
 
 nav, .logo--sticky {
@@ -310,31 +407,7 @@ nav {
     display: none;
   }
 }
-.nav a {
-  text-decoration: none;
-  color: var(--navText);
-}
-.nav a:hover {
-  color: var(--navText);
-}
-.nav li {
-  padding: 8px;
-  padding-left: 35px;
-  padding-right: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  box-shadow: 3px -1px 6px -1px rgba(0, 0, 0, 0.75);
-  transition: all 0.3s;
-  font-family: "truenolight";
-}
-.nav li:hover {
-  box-shadow: 5px -1px 6px -1px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-}
-.nav li {
-  margin-left: -25px;
-}
-.nav li:nth-child(1) {
+.nav #logo-dot {
   background: #000000;
   margin-left: 0;
   padding-right: 5px;
@@ -348,38 +421,65 @@ nav {
   opacity: 0;
   transition: all 0.2s;
 }
-.nav li:nth-child(2) {
+.nav #logo-dot.is--visible {
+  opacity: 1;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--navText);
+}
+.nav a:hover {
+  color: var(--navText);
+}
+.nav a {
+  padding: 8px;
+  padding-left: 35px;
+  padding-right: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 3px -1px 6px -1px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s;
+  font-family: "truenolight";
+}
+.nav a:hover {
+  box-shadow: 5px -1px 6px -1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.nav a {
+  margin-left: -25px;
+}
+.nav a:nth-child(2) {
   background: #ffc799;
   z-index: 5;
   margin-left: 25px;
   border-radius: 25px;
 }
-.nav li:nth-child(2):hover {
+.nav a:nth-child(2):hover {
   background: #fcddc3;
 }
-.nav li:nth-child(3) {
+.nav a:nth-child(3) {
   background: #cfff99;
   z-index: 4;
 }
-.nav li:nth-child(3):hover {
+.nav a:nth-child(3):hover {
   background: #e1fcc2;
 }
-.nav li:nth-child(4) {
+.nav a:nth-child(4) {
   background: #99fff6;
   z-index: 3;
 }
-.nav li:nth-child(4):hover {
+.nav a:nth-child(4):hover {
   background: #bcfcf6;
 }
-.nav li:nth-child(5) {
+.nav a:nth-child(5) {
   background: #c099ff;
   z-index: 2;
 }
-.nav li:nth-child(6) {
+.nav a:nth-child(6) {
   background: #f399ff;
   z-index: 1;
 }
-.nav li:nth-child(7) {
+.nav a:nth-child(7) {
   background: #ff99c4;
   z-index: 0;
 }
@@ -481,3 +581,87 @@ footer .footer--wrap {
   padding: 20px;
   text-align: left;
 }
+
+/* The work below, CSSBox, is released under the Creative Commons
+Attribution-ShareAlike 4.0 license and is available on
+https://github.com/TheLastProject/CSSBox. You are not required to add
+additional credit to your website, just leave the above text in this file */
+div.cssbox {
+  display: inline-block;
+}
+
+span.cssbox_full {
+  z-index: 999999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  transition: opacity 0.5s linear;
+}
+
+span.cssbox_full img {
+  position: fixed;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 90%;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px black;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+  z-index: 999999;
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  color: white;
+  font-size: 36px;
+}
+
+a.cssbox_close {
+  top: 1%;
+  right: 1%;
+}
+
+a.cssbox_close::after {
+  content: "×";
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+  left: 5%;
+}
+
+a.cssbox_next {
+  right: 5%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+  visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+/* This is the end of CSSBox */
