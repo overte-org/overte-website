@@ -7,7 +7,8 @@
         "build:sass": "sass  --no-source-map src/sass/all.scss:src/css/all.css",
         "build:eleventy": "eleventy",
         "postbuild": "postcss src/css/all.css -o build/css/all.min.css -u autoprefixer cssnano --no-map",
-        "start": "npm-run-all build:sass postbuild --parallel watch:*",
+        "start": "npm-run-all images build:sass postbuild --parallel watch:*",
+        "images": "node images",
         "build": "npm-run-all build:sass build:eleventy postbuild"
     },
     "dependencies": {
@@ -23,7 +24,9 @@
         "del": "^6.0.0",
         "terser": "^5.10.0",
         "markdown-it": "^12.3.2",
-        "markdown-it-attrs": "^4.1.3"
+        "markdown-it-attrs": "^4.1.3",
+        "@11ty/eleventy-img": "^1.1.0",
+        "glob-promise": "^4.2.2"
     },
     "browserslist": [
         "last 2 versions"
