@@ -9,7 +9,7 @@
         "postbuild": "postcss src/css/all.css -o build/css/all.min.css -u autoprefixer cssnano --no-map",
         "start": "npm-run-all images build:sass postbuild --parallel watch:*",
         "images": "node images",
-        "build": "npm-run-all build:sass build:eleventy postbuild"
+        "build": "npm-run-all images build:sass build:eleventy postbuild"
     },
     "dependencies": {
         "@11ty/eleventy": "^0.12.1",
