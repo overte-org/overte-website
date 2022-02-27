@@ -1,12 +1,12 @@
 <nav>
-    <ul style="list-style: none;" class="nav">
+    <ul class="nav">
         <li id="logo-dot"></li>
         {%- for contentBlock in collections.contentBlock | sortByOrder -%}
-        <li>
-            <a href="#{{ contentBlock.data.navUrl }}">
+        {%- if contentBlock.data.draft != true -%}
+        <a href="/#{{ contentBlock.data.navUrl }}">
                 <div class="nav--text">{{ contentBlock.data.title }}</div>
-            </a>
-        </li>
+        </a>
+        {%- endif -%}
         {%- endfor -%}
     </ul>
     <div class="mobile-nav--menu" onclick="document.getElementsByClassName('mobile-nav--menu')[0].classList.toggle('is--open');">
@@ -16,11 +16,13 @@
         <div class="mobile-nav--body">
             <ul>
                 {%- for contentBlock in collections.contentBlock | sortByOrder -%}
-                <a href="#{{ contentBlock.data.navUrl }}" class="mobile-nav--text">
+                {%- if contentBlock.data.draft != true -%}
+                <a href="/#{{ contentBlock.data.navUrl }}" class="mobile-nav--text">
                     <li class="mobile-nav--item">
                         <div>{{ contentBlock.data.title }}</div>
                     </li>
                 </a>
+                {%- endif -%}
                 {%- endfor -%}
             </ul
         </div>

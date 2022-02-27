@@ -1,3 +1,10 @@
+html {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 70px;
+    font-size: 18px;
+    overflow-x: hidden;
+}
 body {
     font-family: $truUltra;
     background: $backgroundColor;
@@ -24,4 +31,58 @@ body {
     .dark {
         display: initial;
     }
- }
+}
+.external-link {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 12px;
+    height: 12px;
+    box-shadow:
+        -2px 2px 0 0,
+        -4px -4px 0 -2px,
+        4px 4px 0 -2px;
+    margin-left: -2px;
+    margin-top: 1px
+}
+.external-link::after,
+.external-link::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: -4px
+}
+
+.external-link::after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    top: -4px
+}
+.warning {
+    position: relative;
+    background: $backgroundLight;
+    padding: 40px 20px 20px 20px;
+    border: 2px solid $textColor;
+    font-family: $truLight;
+    width: max-content;
+
+    &:before {
+        content: "!";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $backgroundColor;
+        color: $link;
+        width: 25px;
+        height: 30px;
+        font-family: $truLight;
+        font-size: 140%;
+        padding-left: 9px;
+        padding-top: 2px;
+        font-weight: bold;
+    }
+}
