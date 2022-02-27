@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --background: #dfdfdf;
   --backgroundLight: #c7c7c7;
@@ -173,8 +174,7 @@ body {
   position: relative;
   background: var(--backgroundLight);
   padding: 40px 20px 20px 20px;
-  border: 2px solid var(--text);
-  font-family: "truenolight";
+  border: 1px solid var(--text);
   width: max-content;
 }
 .warning:before {
@@ -303,6 +303,24 @@ a.external-link img {
 .gallery-top img {
   width: 100%;
   min-height: 500px;
+  object-fit: cover;
+}
+
+#gallery {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cssbox-link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.cssbox-link .cssbox_thumb {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -563,3 +581,87 @@ footer .footer--wrap {
   padding: 20px;
   text-align: left;
 }
+
+/* The work below, CSSBox, is released under the Creative Commons
+Attribution-ShareAlike 4.0 license and is available on
+https://github.com/TheLastProject/CSSBox. You are not required to add
+additional credit to your website, just leave the above text in this file */
+div.cssbox {
+  display: inline-block;
+}
+
+span.cssbox_full {
+  z-index: 999999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  transition: opacity 0.5s linear;
+}
+
+span.cssbox_full img {
+  position: fixed;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 90%;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px black;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+  z-index: 999999;
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  color: white;
+  font-size: 36px;
+}
+
+a.cssbox_close {
+  top: 1%;
+  right: 1%;
+}
+
+a.cssbox_close::after {
+  content: "×";
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+  left: 5%;
+}
+
+a.cssbox_next {
+  right: 5%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+  visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+/* This is the end of CSSBox */

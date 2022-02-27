@@ -1,19 +1,21 @@
-module.exports = (config) => {
-	const del = require("del");
-	const CleanCSS = require("clean-css");
-	const { minify } = require("terser");
-	const dirToClean = "build/*";
-	del(dirToClean);
-	const markdownIt = require('markdown-it')
-	const markdownItAttrs = require('markdown-it-attrs')
-
-	const markdownItOptions = {
+const del = require("del");
+const CleanCSS = require("clean-css");
+const { minify } = require("terser");
+const dirToClean = "build/*";
+const markdownIt = require('markdown-it');
+const markdownItAttrs = require('markdown-it-attrs');
+const markdownItOptions = {
 	html: true,
 	breaks: true,
 	linkify: true
-	}
+};
+const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+const Image = require("@11ty/eleventy-img");
+const glob = require("glob-promise");
 
-	const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+
+module.exports = (config) => {
+	del(dirToClean);
 	config.setLibrary('md', markdownLib)
 	config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
 		try {
@@ -32,6 +34,20 @@ module.exports = (config) => {
 		return new CleanCSS({}).minify(code).styles;
 	});
 	config.addPassthroughCopy("src/img");
+	config.addCollection('images', async collectionApi => {
+		let files = await glob('./build/img/gallery/*.{jpg,jpeg,png,gif}');
+		let images = files.filter(file => {
+			return file.indexOf('./build/img/gallery/thumb-') !== 0;
+		});
+
+		let collection = images.map(image => {
+			return {
+				path: image.replace('./build/img/gallery/', '/img/gallery/'),
+				thumbpath: image.replace('./build/img/gallery/', '/img/gallery/thumb-')
+			}
+		});
+		return collection;
+	});
 	config.addPassthroughCopy("src/fonts");
 	config.addPassthroughCopy("src/robots.txt");
 	config.addPassthroughCopy("src/favicon.ico");

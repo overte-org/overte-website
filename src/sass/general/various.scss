@@ -66,8 +66,7 @@ body {
     position: relative;
     background: $backgroundLight;
     padding: 40px 20px 20px 20px;
-    border: 2px solid $textColor;
-    font-family: $truLight;
+    border: 1px solid $textColor;
     width: max-content;
 
     &:before {
