@@ -67,7 +67,7 @@ body {
     background: $backgroundLight;
     padding: 40px 20px 20px 20px;
     border: 1px solid $textColor;
-    width: max-content;
+    width: fit-content;
     margin-bottom: 20px;
 
     &:before {

@@ -175,7 +175,7 @@ body {
   background: var(--backgroundLight);
   padding: 40px 20px 20px 20px;
   border: 1px solid var(--text);
-  width: max-content;
+  width: fit-content;
   margin-bottom: 20px;
 }
 .warning:before {
