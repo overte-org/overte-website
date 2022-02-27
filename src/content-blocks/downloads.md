@@ -22,6 +22,9 @@ articleTopLinks: {
 
 Windows installer is not signed yet, so Windows Defender might display a warning about this.{class="warning"}
 
+-   First click on *"More info"*
+-   Then click on *"Run anyway"* to continue
+
 Mac OS build coming soon.
 
 [![Windows Installer](/img/icons/git-icon.png)Source code repository](https://github.com/overte-org){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
