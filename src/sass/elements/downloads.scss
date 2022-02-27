@@ -1,0 +1,31 @@
+a.external-link { 
+    background: $hover;
+    padding: 10px 20px 10px 15px;
+    color: $navigationTextColor;
+    font-family: $truLight;
+    text-decoration: none;
+    min-width: 300px;
+    width: max-content;
+    height: 64px;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+
+    &:before {
+        content: "";
+        width: 64px;
+        height: 64px;
+        background: $backgroundColor;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    img {
+        height: 30px;
+        position: relative;
+        top: 8px;
+        margin-right: 30px;
+    }
+}
