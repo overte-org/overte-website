@@ -23,7 +23,7 @@ jobs:
         npm run build
 
     - name: Deploy website
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ftp.tuxfamily.org
         username: ${{ secrets.GHA_FTP_USER }}
