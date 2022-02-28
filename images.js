@@ -26,8 +26,6 @@ del("./src/img/gallery/*");
     let files = await glob('./src/screenshots/*.{jpg,jpeg,png,gif}');
     for(const f of files) {
         console.log(`processing ${f}`);
-        let stats = await Image(f, options);
-        console.log(stats);
         await Image(f, options);
     };
 

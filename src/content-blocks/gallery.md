@@ -19,7 +19,7 @@ articleTopLinks: {
 <div id="gallery">
 {% for image in collections.images %}
 <div class="cssbox">
-<a href="#image{{forloop.index}}" id="image{{forloop.index}}" class="cssbox-link"><img src=".{{image.thumbpath}}" class="cssbox_thumb">
+<a href="#image{{forloop.index}}" id="image{{forloop.index}}" class="cssbox-link"><img src="{{image.thumbpath | url}}" class="cssbox_thumb">
 <span class="cssbox_full"><img src=".{{image.path}}"></span>
 </a>
 <a class="cssbox_close" href="#void"></a>
