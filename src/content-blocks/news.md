@@ -18,10 +18,10 @@ articleTopLinks: {
 {{page.filePathStem}}
 {% for newsPost in collections.news limit:3 reversed %}
 <div class="news--post"> 
-    <a href="{{ newsPost.url }}">
+    <a href="{{ newsPost.url| url }}">
         <h2>{{ newsPost.data.title }}</h2>
         <div class="news--content">
-            <div class="news--content-image"><img src="./img/news-teasers/{{ newsPost.data.teaserImage }}"></div>
+            <div class="news--content-image"><img src="{{'/img/news-teasers/' | url}}{{ newsPost.data.teaserImage }}"></div>
             <div class="news--content-summary">
                 <p>{{ newsPost.data.summary | safe }}</p>
                 <p class="news--read-more">Read More</p>
