@@ -12,7 +12,6 @@ const markdownItOptions = {
 const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 const Image = require("@11ty/eleventy-img");
 const glob = require("glob-promise");
-const path = require("path");
 
 module.exports = (config) => {
 	del(dirToClean);
@@ -65,5 +64,6 @@ module.exports = (config) => {
 			input: "src",
 			output: "build",
 		},
+		pathPrefix: '/staging/'
 	};
 };
