@@ -63,7 +63,6 @@ module.exports = (config) => {
 		dir: {
 			input: "src",
 			output: "build",
-		},
-		pathPrefix: '/staging/'
+		}
 	};
 };
