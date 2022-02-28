@@ -6,7 +6,7 @@
         "watch:eleventy": "eleventy --serve",
         "build:sass": "sass  --no-source-map src/sass/all.scss:src/css/all.css",
         "build:eleventy": "eleventy --pathprefix='/'",
-        "build:eleventy-staging": "eleventy --pathprefix='/staging/' --config=.eleventy-staging.js",
+        "build:eleventy-staging": "eleventy --pathprefix='/staging/'",
         "postbuild": "postcss src/css/all.css -o build/css/all.min.css -u autoprefixer cssnano --no-map",
         "start": "npm-run-all images build:sass postbuild --parallel watch:*",
         "images": "node images",
