@@ -17,8 +17,8 @@ module.exports = (config) => {
 	del(dirToClean);
 	config.setLibrary('md', markdownLib);
 	config.addNunjucksShortcode("rootPath", function() {
-		return '/';
-	 });
+		return '/staging/';
+	});
 	config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
 		try {
 			const minified = await minify(code);

@@ -1,9 +1,10 @@
 <nav>
     <ul class="nav">
+    {{page.pathPrefix}}
         <li id="logo-dot"></li>
         {%- for contentBlock in collections.contentBlock | sortByOrder -%}
         {%- if contentBlock.data.draft != true -%}
-        <a href="{{ '/#'+contentBlock.data.navUrl | url }}">
+        <a href="{% rootPath %}#{{contentBlock.data.navUrl}}">
                 <div class="nav--text">{{ contentBlock.data.title }}</div>
         </a>
         {%- endif -%}
@@ -17,7 +18,7 @@
             <ul>
                 {%- for contentBlock in collections.contentBlock | sortByOrder -%}
                 {%- if contentBlock.data.draft != true -%}
-                <a href="{{ '/#'+contentBlock.data.navUrl | url }}" class="mobile-nav--text">
+                <a href="{% rootPath %}#{{contentBlock.data.navUrl}}" class="mobile-nav--text">
                     <li class="mobile-nav--item">
                         <div>{{ contentBlock.data.title }}</div>
                     </li>

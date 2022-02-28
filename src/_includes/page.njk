@@ -1,7 +1,7 @@
 {% include "partials/header.njk" %}
 {% block content %}
-<img src="/img/o_only_black.svg" alt="Overte Logo" class="logo--sticky  light"><img src="/img/verte_only_black.svg" alt="Overte Logo" class="logo light">
-<img src="/img/o_only_white.svg" alt="Overte Logo" class="logo--sticky dark"><img src="/img/verte_only_white.svg" alt="Overte Logo" class="logo dark">
+<img src="{{'/img/o_only_black.svg' | url }}" alt="Overte Logo" class="logo--sticky  light"><img src="{{'/img/verte_only_black.svg' | url }}" alt="Overte Logo" class="logo light">
+<img src="{{'/img/o_only_white.svg' | url }}" alt="Overte Logo" class="logo--sticky dark"><img src="{{'/img/verte_only_white.svg' | url }}" alt="Overte Logo" class="logo dark">
 {% include "partials/navigation.njk" %}
 <main>
     {% include "partials/gallery-top.njk" %}
