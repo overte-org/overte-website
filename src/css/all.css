@@ -113,7 +113,6 @@ body {
   font-family: "truenoultralight";
   background: var(--background);
   margin-bottom: 0;
-  background: url("/img/blur_light.jpg") var(--background);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -128,7 +127,6 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: url("/img/blur_dark.jpg") var(--background);
     background-attachment: fixed;
     background-size: cover;
   }

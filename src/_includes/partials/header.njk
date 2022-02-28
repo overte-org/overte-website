@@ -23,5 +23,14 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="{{ '/img/fav/ms-icon-144x144.png' | url }}">
     <meta name="theme-color" content="#000000">
+    <style>
+    body {
+        background: url("{{ '/img/blur_light.jpg' | url }}") $backgroundColor;
+    }
+    @media (prefers-color-scheme: dark) {
+    body {
+        background: url("{{ '/img/blur_dark.jpg' | url }}") $backgroundColor;
+    }
+    </style>
 </head>
 <html>
