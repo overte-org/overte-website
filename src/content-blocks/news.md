@@ -15,7 +15,7 @@ articleTopLinks: {
   
 }
 ---
-{{page.filePathStem}}
+
 {% for newsPost in collections.news limit:3 reversed %}
 <div class="news--post"> 
     <a href="{{ newsPost.url| url }}">
