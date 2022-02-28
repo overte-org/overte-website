@@ -25,11 +25,15 @@
     <meta name="theme-color" content="#000000">
     <style>
     body {
-        background: url("{{ '/img/blur_light.jpg' | url }}") $backgroundColor;
+        background: url("{{ '/img/blur_light.jpg' | url }}");
+        background-attachment: fixed;
+        background-size: cover;
     }
     @media (prefers-color-scheme: dark) {
     body {
-        background: url("{{ '/img/blur_dark.jpg' | url }}") $backgroundColor;
+        background: url("{{ '/img/blur_dark.jpg' | url }}");
+        background-attachment: fixed;
+        background-size: cover;
     }
     </style>
 </head>

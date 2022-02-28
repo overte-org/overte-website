@@ -111,7 +111,7 @@ html {
 
 body {
   font-family: "truenoultralight";
-  background: var(--background);
+  background-color: var(--background);
   margin-bottom: 0;
   background-attachment: fixed;
   background-size: cover;
