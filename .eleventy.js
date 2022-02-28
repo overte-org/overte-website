@@ -9,14 +9,14 @@ const markdownItOptions = {
 	breaks: true,
 	linkify: true
 };
-const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 const Image = require("@11ty/eleventy-img");
 const glob = require("glob-promise");
-
+const path = require("path");
 
 module.exports = (config) => {
 	del(dirToClean);
-	config.setLibrary('md', markdownLib)
+	config.setLibrary('md', markdownLib);
 	config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
 		try {
 			const minified = await minify(code);
