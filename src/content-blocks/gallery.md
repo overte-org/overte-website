@@ -20,7 +20,7 @@ articleTopLinks: {
 {% for image in collections.images %}
 <div class="cssbox">
 <a href="#image{{forloop.index}}" id="image{{forloop.index}}" class="cssbox-link"><img src="{{image.thumbpath | url}}" class="cssbox_thumb">
-<span class="cssbox_full"><img src=".{{image.path | url}}"></span>
+<span class="cssbox_full"><img src="{{image.path | url}}"></span>
 </a>
 <a class="cssbox_close" href="#void"></a>
 {% if forloop.first == false %}<a class="cssbox_prev" href="#image{{ forloop.index | minus: 1 }}">&lt;</a>{% endif %}{% if forloop.last == false %}<a class="cssbox_next" href="#image{{ forloop.index | plus: 1}}">&gt;</a>
