@@ -7,9 +7,8 @@ html {
 }
 body {
     font-family: $truUltra;
-    background: $backgroundColor;
+    background-color: $backgroundColor;
     margin-bottom: 0;
-    background: url("/img/blur_light.jpg") $backgroundColor;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -21,7 +20,6 @@ body {
 }
 @media (prefers-color-scheme: dark) {
     body {
-        background: url("/img/blur_dark.jpg") $backgroundColor;
         background-attachment: fixed;
         background-size: cover;
     }

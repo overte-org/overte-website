@@ -1,0 +1,32 @@
+name: Staging CI Build & Deploy
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build_site:
+    runs-on: ubuntu-20.04
+
+    name: Build and deploy website
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Build website
+      shell: bash
+      run: |
+        npm run build-staging
+
+    - name: Deploy website
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ftp.tuxfamily.org
+        username: ${{ secrets.GHA_FTP_USER }}
+        password: ${{ secrets.GHA_FTP_PASS }}
+        local-dir: ./build/
+        server-dir: overte/overte.org-web/htdocs/staging/
