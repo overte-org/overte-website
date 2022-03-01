@@ -10,7 +10,7 @@ author:
 tags: impress
 
 ---
-# Imprint
+## Imprint
 
 Overte e.V. 
 
@@ -20,8 +20,7 @@ Overte e.V.
 * Germany
 
 info@kreolis.net
-
-# Copyright
+## Copyright
 
 Copyright (c) 2022, Overte e.V..
 All rights reserved.

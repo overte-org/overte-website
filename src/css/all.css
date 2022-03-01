@@ -218,19 +218,21 @@ main {
     top: -50px;
   }
 }
-.section p {
+.section p, .section h2 {
   margin-bottom: 30px;
 }
-.section h1, .section h2 {
-  margin: 0;
-  padding: 10px 20px;
+.section h1 {
+  background: #000000;
   position: absolute;
-  font-family: truenolight;
   top: 0;
   left: 0;
-  background: #000000;
-  color: #ffffff;
+  margin: 0;
   border-bottom-right-radius: 25px;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.section h1, .section h2 {
+  font-family: truenolight;
   font-size: 130%;
 }
 .section ul {
