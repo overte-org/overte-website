@@ -1,0 +1,5 @@
+Contact: 
+	 matrix: #overte:matrix.org
+	 mailto: security[at]overte.org
+Preferred-Languages: en
+Canonical: https://overte.org/security.txt
