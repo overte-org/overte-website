@@ -14,7 +14,7 @@ nav, .logo--sticky {
 .logo, .logo--sticky {
     height: 60px;
     padding-top: 13px;
-
+    pointer-events: none;
 }
 .logo {
     margin-left: -5px
