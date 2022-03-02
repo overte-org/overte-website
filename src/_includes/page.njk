@@ -9,7 +9,7 @@
     {%- if contentBlock.data.draft != true -%}
     <article class="section {{ contentBlock.data.navUrl }}">
         <a id="{{ contentBlock.data.navUrl }}" class="nav--anchor"></a>
-        <h2>{{ contentBlock.data.title }}</h2>
+        <h2 class="section--title">{{ contentBlock.data.title }}</h2>
         {{ contentBlock.data.content | safe }}
     </article>
     {%- endif -%}

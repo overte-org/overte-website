@@ -23,7 +23,7 @@ main {
     & p, & h2 {
         margin-bottom: 30px;
     }
-    & h1 {
+    & h1, &--title {
         background: #000000;
         position: absolute;
         top: 0;
