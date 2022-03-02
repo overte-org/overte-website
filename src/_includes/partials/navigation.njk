@@ -1,11 +1,13 @@
 <nav>
     <ul class="nav">
     {{page.pathPrefix}}
-        <li id="logo-dot"></li>
+        <a id="logo-dot" href="{{'/' | url }}#">
+            <li></li>
+        </a>
         {%- for contentBlock in collections.contentBlock | sortByOrder -%}
         {%- if contentBlock.data.draft != true -%}
         <a href="{{'/' | url }}#{{contentBlock.data.navUrl}}">
-                <div class="nav--text">{{ contentBlock.data.title }}</div>
+            <div class="nav--text">{{ contentBlock.data.title }}</div>
         </a>
         {%- endif -%}
         {%- endfor -%}
