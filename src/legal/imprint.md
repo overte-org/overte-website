@@ -16,10 +16,11 @@ Overte e.V.
 
 * Marius Anger
 * Schirmgasse 276
-* 84028 Landshut
+* XXXXX Paderborn
 * Germany
 
 info@kreolis.net
+
 ## Copyright
 
 Copyright (c) 2022, Overte e.V..
