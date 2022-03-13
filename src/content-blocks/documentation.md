@@ -20,3 +20,8 @@ articleTopLinks: {
 
 [API documentation](http://apidocs.overte.org)
 
+We are an open source project. You are very welcome to contribute to the project. See below for contact information or go directly to the [repository](https://github.com/overte-org). 
+We have a weekly developer meeting. All merge request will be discussed there.
+
+Where: Overte VR - Overte Hub
+When: 19:00 UTC
