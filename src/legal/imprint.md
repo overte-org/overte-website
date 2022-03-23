@@ -14,12 +14,12 @@ tags: impress
 
 Overte e.V. 
 
-* Marius Anger
-* Schirmgasse 276
-* XXXXX Paderborn
+* Julian Groß
+* Glatzer Straße 16
+* 33098 Paderborn
 * Germany
 
-info@kreolis.net
+info@overte.org
 
 ## Copyright
 
