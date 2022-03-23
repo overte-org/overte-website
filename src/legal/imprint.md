@@ -19,7 +19,7 @@ Overte e.V.
 * 33098 Paderborn
 * Germany
 
-info@overte.org
+contact@overte.org
 
 ## Copyright
 
