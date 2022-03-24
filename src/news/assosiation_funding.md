@@ -1,8 +1,8 @@
 ---
-title: Overte e.V. Association Funding
+title: Overte e.V. Association Founding
 subtitle: 
 layout: news-post.njk
-summary: The association, that will be the backbone to Overte, has been funded.  
+summary: The association that will be the backbone to Overte, has been founded.  
 teaserImage: ev_funding.png
 
 author:
@@ -13,10 +13,10 @@ tags: news
 
 ---
 
-It was alawys the plan to have the Overte VR software supported by the Overte e.V association. 
-Finally this association has been funded with the funding members. 
+From the beginning Overte VR software was planned to be supported by the Overte e.V nonprofit association. 
+Finally this association has been founded by the founding members. 
 
-It is a none profit association and has the sole purpose of promoting and distributing of free Social-VR software in terms of free software, and the program package “Overte” in particular, to promote the free exchange of knowledge and equality of opportunity in accessing software as well as education, science and research.
+It is a nonprofit association and has the sole purpose of promoting and distributing free Social VR software on terms of free software, and the program package “Overte” in particular, to promote the free exchange of knowledge and equality of opportunity in accessing software as well as education, science and research.
 
 The first board has also been elected. Here are the board members:
 - Dale
