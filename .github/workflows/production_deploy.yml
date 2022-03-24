@@ -32,3 +32,4 @@ jobs:
         server-dir: overte/overte.org-web/htdocs/
         exclude: |
           **/staging/**
+          .htaccess

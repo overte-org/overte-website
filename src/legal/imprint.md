@@ -14,12 +14,13 @@ tags: impress
 
 Overte e.V. 
 
-* Marius Anger
-* Schirmgasse 276
-* 84028 Landshut
-* Germany
+Julian Groß
+Glatzer Straße 16
+33098 Paderborn
+Germany
 
-info@kreolis.net
+contact@overte.org
+
 ## Copyright
 
 Copyright (c) 2022, Overte e.V..
@@ -28,7 +29,9 @@ https://overte.org
 
 Licensed under the Apache License version 2.0 (the "License");
 You may not use this software except in compliance with the License.
-You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0
+You may obtain a copy of the License at: 
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0){target="_blank" rel="noopener noreferrer nofollow"}
 
 This software includes third-party and other platform software.
 Please see each individual software license for additional details.

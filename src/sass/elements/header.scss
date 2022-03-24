@@ -7,6 +7,14 @@ nav, .logo--sticky {
         position: initial;
     }
 }
+.home-link {
+    margin-left: calc(var(--element-spacing) - var(--logo-spacing));
+    width: 185px;
+    display: block;
+    height: 55px;
+    position: absolute;
+    top: 10px;
+}
 .logo--sticky {
     z-index: 10;
     padding-left: calc(#{$element-spacing} - #{$logo-spacing});
@@ -34,7 +42,7 @@ nav {
     }
 
     & #logo-dot {
-        background: #000000;
+        background: #6667AB;
         margin-left: 0;
         padding-right: 5px;
         border-radius: 50px;
@@ -46,6 +54,10 @@ nav {
         left: -6px;
         opacity: 0;
         transition: all 0.2s;
+
+        @media (prefers-color-scheme: dark) {
+            background: #000000;
+        }
 
         &.is--visible {
             opacity: 1;
