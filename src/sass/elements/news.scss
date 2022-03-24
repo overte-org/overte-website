@@ -4,10 +4,15 @@
 
         h2 {
             font-size: 100%;
-            position:initial;
+            position: initial;
             border-radius: 0;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            background: black;
+            color: white;
+            margin-bottom: 0;
+            padding: 10px;
+            width: fit-content;
         }
         a {
             text-decoration: none;
