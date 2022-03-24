@@ -9,6 +9,15 @@ author:
   date: 01.03.2022
 tags: ev
 
+members: [
+  { name: 'Dale', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: 'Moto', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: 'Catraxx', position: '',  image: '/img/board/catraxx.png'},
+  { name: '74hc595', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: 'Kreolis', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: 'Micah', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'}
+]
+
 ---
 ## The Overte e.V. Association
 
@@ -52,12 +61,9 @@ or this email: [application@overte.org](mailto:application@overte.org)
 ## Current Board
 
 The current association board consists of six members:
-
-| Image    | Name | Position |
-|---------|-----------|--------|
-| <div class="news--content-image"><img src="{{'/img/gallery/thumb-screenshot_1.jpeg' | url}}"></div> | | Dale    |
-| <div class="news--content-image"><img src="{{'/img/gallery/thumb-screenshot_1.jpeg' | url}}"></div> | | Moto    |   
-| <div class="news--content-image"><img src="{{'/img/gallery/thumb-screenshot_1.jpeg' | url}}"></div> | | Catraxx |   
-| <div class="news--content-image"><img src="{{'/img/gallery/thumb-screenshot_1.jpeg' | url}}"></div> | | 74hc595 |   
-| <div class="news--content-image"><img src="{{'/img/gallery/thumb-screenshot_1.jpeg' | url}}"></div> | | Kreolis |   
-| <div class="news--content-image"><img src="{{'/img/gallery/thumb-screenshot_1.jpeg' | url}}"></div> | | Micah   |   
+<div class="member-table">
+<div class="member-table--header">Image</div><div class="member-table--header">Name</div><div class="member-table--header">Position</div>
+{%- for member in members -%}
+<img src="{{member.image}}" class="member-table--image"><div class="member-table--name">{{member.name}}</div><div class="member-table--position"></div>
+{%- endfor -%}
+</div>
