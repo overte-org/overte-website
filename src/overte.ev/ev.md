@@ -64,6 +64,6 @@ The current association board consists of six members:
 <div class="member-table">
 <div class="member-table--header">Image</div><div class="member-table--header">Name</div><div class="member-table--header">Position</div>
 {%- for member in members -%}
-<img src="{{member.image}}" class="member-table--image"><div class="member-table--name">{{member.name}}</div><div class="member-table--position"></div>
+<img src="{{member.image | url}}" class="member-table--image"><div class="member-table--name">{{member.name}}</div><div class="member-table--position"></div>
 {%- endfor -%}
 </div>
