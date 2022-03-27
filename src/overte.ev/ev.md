@@ -11,9 +11,9 @@ tags: ev
 
 members: [
   { name: 'Dale', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
-  { name: 'Moto', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: 'Julian Groß', position: '',  image: '/img/board/julian.jpeg'},
   { name: 'Catraxx', position: '',  image: '/img/board/catraxx.png'},
-  { name: '74hc595', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: '74hc595', position: '',  image: '/img/board/74.png'},
   { name: 'Kreolis', position: '',  image: '/img/board/kreolis.png'},
   { name: 'Micah', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'}
 ]
@@ -64,6 +64,6 @@ The current association board consists of six members:
 <div class="member-table">
 <div class="member-table--header">Image</div><div class="member-table--header">Name</div><div class="member-table--header">Position</div>
 {%- for member in members -%}
-<img src="{{member.image}}" class="member-table--image"><div class="member-table--name">{{member.name}}</div><div class="member-table--position"></div>
+<img src="{{member.image | url}}" class="member-table--image"><div class="member-table--name">{{member.name}}</div><div class="member-table--position"></div>
 {%- endfor -%}
 </div>
