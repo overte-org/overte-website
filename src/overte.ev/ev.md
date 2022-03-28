@@ -14,7 +14,7 @@ members: [
   { name: 'Julian Groß', position: '',  image: '/img/board/julian.jpeg'},
   { name: 'Catraxx', position: '',  image: '/img/board/catraxx.png'},
   { name: '74hc595', position: '',  image: '/img/board/74.png'},
-  { name: 'Kreolis', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: 'Kreolis', position: '',  image: '/img/board/kreolis.png'},
   { name: 'Micah', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'}
 ]
 
