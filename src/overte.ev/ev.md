@@ -53,8 +53,11 @@ Currently the yearly membership fee is 60 Euro. The fee is pre paid either yearl
 If you want to join please make yourself familiar with the articles of association linked above.
 To join the association please write a application to this postal address:
 
-- Paderborn
-- Germany
+Overte e.V.
+Julian Groß
+Glatzer Straße 16
+33098 Paderborn
+Germany
 
 or this email: [application@overte.org](mailto:application@overte.org)
  
