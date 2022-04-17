@@ -1,6 +1,16 @@
+html {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 70px;
+    font-size: 18px;
+    overflow-x: hidden;
+}
 body {
     font-family: $truUltra;
-    background: $backgroundColor;
+    background-color: $backgroundColor;
+    margin-bottom: 0;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .light {
     display: initial;
@@ -9,10 +19,77 @@ body {
     display: none;
 }
 @media (prefers-color-scheme: dark) {
+    body {
+        background-attachment: fixed;
+        background-size: cover;
+    }
     .light {
         display: none;
     }
     .dark {
         display: initial;
     }
- }
+}
+.external-link {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 12px;
+    height: 12px;
+    box-shadow:
+        -2px 2px 0 0,
+        -4px -4px 0 -2px,
+        4px 4px 0 -2px;
+    margin-left: -2px;
+    margin-top: 1px;
+
+    @media screen and (max-width: $mobile-break) {
+        min-width: 100%;
+        font-size: 80%;
+    }
+}
+.external-link::after,
+.external-link::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: -4px
+}
+
+.external-link::after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    top: -4px
+}
+.warning {
+    position: relative;
+    background: $backgroundLight;
+    padding: 40px 20px 20px 20px;
+    border: 1px solid $textColor;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    &:before {
+        content: "!";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $backgroundColor;
+        color: $link;
+        width: 25px;
+        height: 30px;
+        font-family: $truLight;
+        font-size: 140%;
+        padding-left: 9px;
+        padding-top: 2px;
+        font-weight: bold;
+    }
+}
+a {
+    color: $textColor;
+    font-family: $truLight;
+}

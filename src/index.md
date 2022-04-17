@@ -10,10 +10,4 @@ author:
 articleTopLinks: {
   
 }
-eleventyNavigation:
-  key: home
-  order: 100
 ---
-
-test
-

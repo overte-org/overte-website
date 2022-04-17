@@ -20,10 +20,10 @@ jobs:
     - name: Build website
       shell: bash
       run: |
-        npm run build
+        npm run build-staging
 
     - name: Deploy website
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ftp.tuxfamily.org
         username: ${{ secrets.GHA_FTP_USER }}

@@ -1,12 +1,15 @@
 <nav>
-    <ul style="list-style: none;" class="nav">
-        <li id="logo-dot"></li>
+    <ul class="nav">
+    {{page.pathPrefix}}
+        <a id="logo-dot" href="{{'/' | url }}#">
+            <li></li>
+        </a>
         {%- for contentBlock in collections.contentBlock | sortByOrder -%}
-        <li>
-            <a href="#{{ contentBlock.data.navUrl }}">
-                <div class="nav--text">{{ contentBlock.data.title }}</div>
-            </a>
-        </li>
+        {%- if contentBlock.data.draft != true -%}
+        <a href="{{'/' | url }}#{{contentBlock.data.navUrl}}">
+            <div class="nav--text">{{ contentBlock.data.title }}</div>
+        </a>
+        {%- endif -%}
         {%- endfor -%}
     </ul>
     <div class="mobile-nav--menu" onclick="document.getElementsByClassName('mobile-nav--menu')[0].classList.toggle('is--open');">
@@ -16,13 +19,15 @@
         <div class="mobile-nav--body">
             <ul>
                 {%- for contentBlock in collections.contentBlock | sortByOrder -%}
-                <li class="mobile-nav--item">
-                    <a href="#{{ contentBlock.data.navUrl }}">
-                        <div class="nav--text">{{ contentBlock.data.title }}</div>
-                    </a>
-                </li>
+                {%- if contentBlock.data.draft != true -%}
+                <a href="{{'/' | url }}#{{contentBlock.data.navUrl}}" class="mobile-nav--text">
+                    <li class="mobile-nav--item">
+                        <div>{{ contentBlock.data.title }}</div>
+                    </li>
+                </a>
+                {%- endif -%}
                 {%- endfor -%}
-            </ul
+            </ul>
         </div>
     </div>
 </nav>

@@ -1,16 +1,21 @@
 {% include "partials/header.njk" %}
 {% block content %}
-<img src="/img/o_only_black.svg" alt="Overte Logo" class="logo--sticky  light"><img src="/img/verte_only_black.svg" alt="Overte Logo" class="logo light">
-<img src="/img/o_only_white.svg" alt="Overte Logo" class="logo--sticky dark"><img src="/img/verte_only_white.svg" alt="Overte Logo" class="logo dark">
+<a href="{{'/' | url }}#" class="home-link">
+</a>
+<img src="{{'/img/o_only_black.svg' | url }}" alt="Overte Logo" class="logo--sticky  light"><img src="{{'/img/verte_only_black.svg' | url }}" alt="Overte Logo" class="logo light">
+<img src="{{'/img/o_only_white.svg' | url }}" alt="Overte Logo" class="logo--sticky dark"><img src="{{'/img/verte_only_white.svg' | url }}" alt="Overte Logo" class="logo dark">
+
 {% include "partials/navigation.njk" %}
 <main>
-
+    {% include "partials/gallery-top.njk" %}
     {%- for contentBlock in collections.contentBlock | sortByOrder -%}
-    <article class="section">
+    {%- if contentBlock.data.draft != true -%}
+    <article class="section {{ contentBlock.data.navUrl }}">
         <a id="{{ contentBlock.data.navUrl }}" class="nav--anchor"></a>
-        <h2>{{ contentBlock.data.title }}</h2>
+        <h2 class="section--title">{{ contentBlock.data.title }}</h2>
         {{ contentBlock.data.content | safe }}
     </article>
+    {%- endif -%}
     {%- endfor -%}
 </main>
 {% endblock %}

@@ -1,0 +1,31 @@
+.member-table {
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    width: 50%;
+
+    @media screen and (max-width: $mobile-break) {
+        width: 100%;
+    }
+
+    &--header {
+        font-family: $truLight;
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+    &--image {
+        width: 100px;
+        height: 100px;
+        border-left: 1px solid black;
+    }
+    &--image, &--name, &--position {
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+    &--header, &--name, &--position {
+        text-align: center;
+    }
+    &--name, &--position {
+        padding-top: 40px;
+        background-color: #979595;
+    }
+}
