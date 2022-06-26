@@ -10,7 +10,7 @@ author:
 tags: ev
 
 members: [
-  { name: 'Dale', position: '',  image: '/img/gallery/thumb-screenshot_1.jpeg'},
+  { name: 'Dale', position: '',  image: '/img/board/dale.png'},
   { name: 'Julian Groß', position: '',  image: '/img/board/julian.jpeg'},
   { name: 'Catraxx', position: '',  image: '/img/board/catraxx.png'},
   { name: '74hc595', position: '',  image: '/img/board/74.png'},
