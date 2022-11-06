@@ -56,6 +56,10 @@ overte.org's Privacy Policy does not apply to other advertisers or websites. Thu
 
 You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
 
+### Fediverse
+
+On this website we are embedding [fediverse](https://fediverse.party/) apps and content. Explicitly we are using the social network [mastodon](https://joinmastodon.org/). This service does not record any additonal data. But if you are logged in your mastodon server, the [privacy policy](https://joinmastodon.org/privacy-policy) of that server applies for all interactions with the content. 
+
 ## Children's Information
 
 Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
