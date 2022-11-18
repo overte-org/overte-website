@@ -3,7 +3,7 @@ title: Second release
 subtitle: 
 layout: news-post.njk
 summary: New builds are available for Overte
-teaserImage: news1.jpg
+teaserImage: news2.jpg
 
 author:
   image: 
