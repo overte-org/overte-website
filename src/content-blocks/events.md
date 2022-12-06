@@ -16,7 +16,7 @@ articleTopLinks: {
 }
 ---
 
-We host weekly Development Meetings, Maker Meets, a Game's Night as well as other events. 
+We host weekly Development Meetings, Maker Meets, a Game's Night as well as other events. Take a look! 
 
-To see our event's calendar, <a href="https://calendar.overte.org" target="_blank"> Click Here</a>
+[![Event Calendar]({{'/img/icons/calendar.png' | url}})Event Calendar](https://calendar.overte.org){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
