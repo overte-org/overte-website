@@ -4,7 +4,7 @@ permalink: false
 navUrl: gallery
 subtitle: 
 layout: page.njk
-order: 3
+order: 4
 
 author:
   image: 

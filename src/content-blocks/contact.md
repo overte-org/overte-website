@@ -4,7 +4,7 @@ permalink: false
 navUrl: contact
 subtitle: 
 layout: page.njk
-order: 5
+order: 6
 
 author:
   image: 
