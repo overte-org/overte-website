@@ -4,7 +4,7 @@ permalink: false
 navUrl: documentation
 subtitle: 
 layout: page.njk
-order: 4
+order: 5
 
 author:
   image: 
@@ -24,4 +24,4 @@ We are an open source project. You are very welcome to contribute to the project
 We have a weekly developer meeting. All merge request will be discussed there.
 
 Where: Overte VR - Overte Hub
-When: Sundays 19:00 UTC
+When: Saturdays 19:00 UTC
