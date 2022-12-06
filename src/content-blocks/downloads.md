@@ -4,7 +4,7 @@ permalink: false
 navUrl: downloads
 subtitle: 
 layout: page.njk
-order: 2
+order: 3
 
 author:
   image: 
