@@ -5,7 +5,6 @@ navUrl: events
 subtitle: 
 layout: page.njk
 order: 2
-draft: false
 
 author:
   image: 
