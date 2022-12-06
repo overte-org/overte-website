@@ -16,9 +16,9 @@ articleTopLinks: {
 }
 ---
 
-[![Appimage]({{'/img/icons/app-x-iso9660-appimage-icon.png' | url}})Linux AppImage](https://github.com/overte-org/overte/releases/download/20220222/Overte-x86_64-20220226.AppImage){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
+[![Appimage]({{'/img/icons/app-x-iso9660-appimage-icon.png' | url}})Linux AppImage](https://github.com/overte-org/overte/releases/download/v2022.09.1/Overte-2022.09.1-x86_64.AppImage){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
-[![Windows Installer]({{'/img/icons/app-x-msdos-program-icon.png' | url}})Windows installer](https://github.com/overte-org/overte/releases/download/20220222/Overte-20220226.exe){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
+[![Windows Installer]({{'/img/icons/app-x-msdos-program-icon.png' | url}})Windows installer](https://github.com/overte-org/overte/releases/download/v2022.09.1/Overte-2022.09.1.exe){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 <div class="warning">
 
 Windows installer is not signed yet, so Windows Defender might display a warning about this.
@@ -30,5 +30,5 @@ Windows installer is not signed yet, so Windows Defender might display a warning
 
 Mac OS build coming soon.
 
-[![Windows Installer]({{'/img/icons/git-icon.png' | url}})Source code repository](https://github.com/overte-org){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
+[![Git]({{'/img/icons/git-icon.png' | url}})Source code repository](https://github.com/overte-org){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
