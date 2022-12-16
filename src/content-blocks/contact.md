@@ -22,12 +22,13 @@ Overte is following the open source philisophy through and through. That's why w
 
 Matrix uses many client applications, with [Element](https://element.io/) being the most popular one.
 
-We also have a Forum, and a Discord server which our Matrix space is bridged to:
+We also have a Forum, a Discord server which our Matrix space is bridged to, and can be found on Mastodon!
 
 [![Forum]({{'/img/icons/forum.png' | url}})Overte Forum](https://forum.overte.org){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
 [![Discord]({{'/img/icons/discord.png' | url}})Overte on Discord](https://discord.gg/4YuQvc8K2f){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
+[![Mastodon]({{'/img/icons/mastodon.png' | url}})Overte on Mastodon](https://fosstodon.org/@overte){target="_blank" rel="noopener noreferrer nofollow" class="external-link"}
 
 
 
