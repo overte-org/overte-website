@@ -8,7 +8,7 @@ teaserImage: ev_funding.png
 author:
   image: 
   name: Overte e.V.
-  date: 06.03.2022
+  date: 15.01.2023
 tags: news
 
 ---
@@ -29,3 +29,5 @@ The first board has also been elected. Here are the board members:
 The articles of association can be found here:
 [Overte e.V. Articles of Association - EN](https://buyanvr-organizational-code-draft.readthedocs.io/en/latest/)
 [Overte e.V. Articles of Association - DE](https://buyanvr-organizational-code-draft.readthedocs.io/de/latest/)
+
+We're now open for membership applications, please see [here](https://overte.org/overte.ev/ev/) for more details.
